@@ -1,0 +1,48 @@
+@font-face {
+  font-family: ProdSans;
+  src: url(/assets/ProductSans\ .ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ProdSans;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.colorspread {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70%;
+  margin: 10px;
+  flex: 1;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+
+.colorspread h1 {
+  position: absolute;
+  color: white;
+  opacity: 0;
+  top: 85%;
+  left: 30px;
+  transition: all .5s ease-in;
+}
+
+.colorspread.active {
+  flex: 6;
+}
+
+.colorspread.active h1 {
+  opacity: 1;
+}
