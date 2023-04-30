@@ -1,0 +1,111 @@
+@font-face {
+  font-family: ProdSans;
+  src: url(assets/ProductSans\ .ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ProdSans;
+  overflow-x: hidden;
+  transition: transform 0.5s linear;
+}
+body {
+  background-color: gray;
+}
+
+.mainpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+  transform: rotate(0deg);
+  transform-origin: top left;
+}
+
+nav {
+  justify-self: flex-start;
+  width: 100%;
+}
+
+.navbutton {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  justify-self: flex-start;
+  padding: 30px 30px;
+  cursor: pointer;
+  background-color: blueviolet;
+  border-bottom-right-radius: 30px;
+}
+
+.bar {
+  background-color: black;
+  color: white;
+  width: 30px;
+  height: 4px;
+}
+
+.article{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.rotate {
+  transform: rotate(-20deg);
+  transform-origin: top left;
+}
+
+
+
+.article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.article h1 {
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+
+.article i {
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.article p {
+  margin-bottom: 30px;
+}
+
+.article h3 {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.hiddentext {
+  align-self: flex-start;
+  margin: 20px;
+  width: 200px;
+  transform: translateX(-120%);
+  justify-self: flex-start;
+  position: fixed;
+  bottom: 30px;
+}
+
+.hiddentext h3 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.hiddentext.translate {
+  transform: translateX(0%);
+}
